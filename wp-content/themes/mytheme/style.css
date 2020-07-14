@@ -1,4 +1,4 @@
-@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+menu-ene-navbar-collapse@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -82,7 +82,7 @@ body {
     margin-left:0
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and(max-width: 991px) {
     .sm-margin-top-sm {
         margin-top:20px
     }
@@ -515,13 +515,13 @@ a.btn-green:hover, .btn-green:hover, a.btn-green:focus, .btn-green:focus, .btn.b
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and(max-width: 991px) {
     .hidden-sm {
         display:none !important
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and(max-width: 1199px) {
     .hidden-md {
         display:none !important
     }
@@ -4780,11 +4780,11 @@ header .mittlere-nav > ul > li > div, header .mittlere-nav > ul > li > a {
     color:#909793
 }
 
-header #ene-navbar-collapse > nav {
+header #menu-ene-navbar-collapse > nav {
     background:#fff
 }
 
-header #ene-navbar-collapse li:hover a, header #ene-navbar-collapse li a:hover {
+header #menu-ene-navbar-collapse li:hover a, header #menu-ene-navbar-collapse li a:hover {
     text-decoration:none
 }
 
@@ -4877,7 +4877,7 @@ header .submenu #nav-alle-dienst > li #collapse-alle-dienstleistungen .fa {
     top:4px
 }
 
-header .submenu #ene-navbar-collapse {
+header .submenu #menu-ene-navbar-collapse {
     border-top: 1px solid #ccc;
     padding:14px 40px
 }
@@ -4886,12 +4886,12 @@ header .submenu > ul > li, header .submenu > ul > div > li {
     line-height:2.5
 }
 
-header .submenu #ene-navbar-collapse li a {
+header .submenu #menu-ene-navbar-collapse li a {
     font-size: 1.6rem;
     color:#333
 }
 
-header .submenu #ene-navbar-collapse .fa {
+header .submenu #menu-ene-navbar-collapse .fa {
     margin-right: 10px;
     color:#333
 }
@@ -4917,7 +4917,7 @@ header .submenu ul li {
 }
 
 @media (max-width: 767px) {
-    header #ene-navbar-collapse .navbar-right {
+    header #menu-ene-navbar-collapse .navbar-right {
         padding-left:25px
     }
 }
@@ -4985,18 +4985,18 @@ header .submenu ul li {
         padding:0 15px
     }
 
-    header nav .submenu #ene-navbar-collapse {
+    header nav .submenu #menu-ene-navbar-collapse {
         padding: 0 15px;
         width:100%
     }
 
-    header nav .submenu #ene-navbar-collapse > li {
+    header nav .submenu #menu-ene-navbar-collapse > li {
         display: inline-block;
         width: 25%;
         text-align:center
     }
 
-    header nav .submenu #ene-navbar-collapse > li > a, header nav .submenu #nav-alle-dienst li a, header nav .submenu #nav-alle-dienst #collapse-alle-dienstleistungen {
+    header nav .submenu #menu-ene-navbar-collapse > li > a, header nav .submenu #nav-alle-dienst li a, header nav .submenu #nav-alle-dienst #collapse-alle-dienstleistungen {
         padding: 10px 15px;
         display:block
     }
@@ -5056,7 +5056,7 @@ header .submenu ul li {
         display:none
     }
 
-    header nav .submenu #ene-navbar-collapse {
+    header nav .submenu #menu-ene-navbar-collapse {
         padding: 0;
         display: inline-block !important;
         width: 100%;
@@ -5064,11 +5064,11 @@ header .submenu ul li {
         border-top:0
     }
 
-    header .submenu #ene-navbar-collapse {
+    header .submenu #menu-ene-navbar-collapse {
         padding:0
     }
 
-    header nav .submenu #ene-navbar-collapse > li {
+    header nav .submenu #menu-ene-navbar-collapse > li {
         width:25%
     }
 
@@ -5109,16 +5109,16 @@ header .submenu ul li {
         line-height:15px
     }
 
-    header .submenu #ene-navbar-collapse li:last-of-type ul > div::before {
+    header .submenu #menu-ene-navbar-collapse li:last-of-type ul > div::before {
         left: unset;
         right:60px
     }
 
-    header .submenu #ene-navbar-collapse li:last-of-type ul {
+    header .submenu #menu-ene-navbar-collapse li:last-of-type ul {
         right:0
     }
 
-    header .submenu #ene-navbar-collapse > li:hover ul {
+    header .submenu #menu-ene-navbar-collapse > li:hover ul {
         display:block
     }
 
