@@ -11,6 +11,11 @@
 
 ?>
 
+					<?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
+						<?php dynamic_sidebar('footer-1'); ?>
+					<?php endif; ?>
+			
+
 	<footer id="colophon" class="site-footer">
 		<!--<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'mytheme' ) ); ?>">

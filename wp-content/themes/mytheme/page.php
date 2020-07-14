@@ -22,7 +22,26 @@ get_header();
 			the_post();
 
 			echo get_post_meta($post->ID, 'header', true);
-			
+		?>
+		<div class="container greyborder-t">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<?php
+
+						if ( is_front_page()) {
+						} else {
+							if ( function_exists('yoast_breadcrumb') ) {
+	  							yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+							}
+
+						}
+					?>
+				</div>
+			</div>
+		</div>
+
+		<?php
+
 			get_template_part( 'template-parts/content', 'page' );
 
 			// If comments are open or we have at least one comment, load up the comment template.

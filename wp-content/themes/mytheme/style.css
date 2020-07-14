@@ -1,4 +1,4 @@
-menu-ene-navbar-collapse@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -82,7 +82,7 @@ body {
     margin-left:0
 }
 
-@media (min-width: 768px) and(max-width: 991px) {
+@media (min-width: 768px) {
     .sm-margin-top-sm {
         margin-top:20px
     }
@@ -288,7 +288,7 @@ a.btn-green, .btn-green {
     background: #22ceb4;
     border: 1px solid #22ceb4;
     border-radius: 0;
-    font-size: 1em;
+    font-size: 16px;
     transition:all .3s ease
 }
 
@@ -515,13 +515,13 @@ a.btn-green:hover, .btn-green:hover, a.btn-green:focus, .btn-green:focus, .btn.b
     }
 }
 
-@media (min-width: 768px) and(max-width: 991px) {
+@media (min-width: 768px) {
     .hidden-sm {
         display:none !important
     }
 }
 
-@media (min-width: 992px) and(max-width: 1199px) {
+@media (min-width: 992px) {
     .hidden-md {
         display:none !important
     }
@@ -2244,6 +2244,10 @@ a.boldgreen:active {
         height:auto
     }
 
+    .navbar {
+    	margin-bottom: 0px;
+    }
+
     #callback-side .hbspt-form .hs_submit, #message-side .hbspt-form .hs_submit {
         width: auto;
         position:initial
@@ -2572,7 +2576,7 @@ a.boldgreen:active {
     }
 
     .bg-start {
-        background: #f2f2f2 url(/img/55/8f/b7/558fb77a-c004-48cb-a71b-e93aa1c07fc9.jpg) no-repeat;
+        background: #f2f2f2 url(/wordpress/wp-content/uploads/2020/07/558fb77a-c004-48cb-a71b-e93aa1c07fc9.jpg) no-repeat;
         background-size:100%
     }
 
@@ -2581,7 +2585,7 @@ a.boldgreen:active {
     }
 
     .bg-service {
-        background: url(/img/cc/5d/ad/cc5dad9c-24f0-4f40-970d-7e2029f28713.jpg) no-repeat;
+        background: url(/wordpress/wp-content/uploads/2020/07/cc5dad9c-24f0-4f40-970d-7e2029f28713.jpg) no-repeat;
         background-size:100%
     }
 
@@ -2596,7 +2600,7 @@ a.boldgreen:active {
     }
 
     .bg-cloud {
-        background: #f2f2f2 url(/img/37/83/b9/3783b987-f86e-44f7-ab3b-58388c26eb6c.jpg) no-repeat;
+        background: #f2f2f2 url(/wordpress/wp-content/uploads/2020/07/3783b987-f86e-44f7-ab3b-58388c26eb6c.jpg) no-repeat;
         background-size:100%
     }
 
@@ -2643,7 +2647,7 @@ a.boldgreen:active {
     }
 
     .bg-desktop {
-        background-image:url(/img/43/ec/33/43ec33eb-bffb-4d31-ba7f-a3d0a68884d2.jpg)
+        background-image:url(/wordpress/wp-content/uploads/2020/07/43ec33eb-bffb-4d31-ba7f-a3d0a68884d2.jpg)
     }
 
     .bg-email {
@@ -2655,7 +2659,7 @@ a.boldgreen:active {
     }
 
     .bg-firewall {
-        background-image:url(/img/42/60/33/426033f5-e587-4697-8115-0ab6d32bc8d4.jpg)
+        background-image:url(/wordpress/wp-content/uploads/2020/07/426033f5-e587-4697-8115-0ab6d32bc8d4.jpg)
     }
 
     .bg-hardware-software-beschaffung {
@@ -2683,7 +2687,7 @@ a.boldgreen:active {
     }
 
     .bg-server {
-        background-image:url(/img/3e/db/4e/3edb4e32-aebd-433d-b184-826150c08e78.jpg)
+        background-image:url(/wordpress/wp-content/uploads/2020/07/3edb4e32-aebd-433d-b184-826150c08e78.jpg)
     }
 
     .bg-ueber-uns {
@@ -4872,14 +4876,14 @@ header .submenu #nav-alle-dienst > li #collapse-alle-dienstleistungen {
 }
 
 header .submenu #nav-alle-dienst > li #collapse-alle-dienstleistungen .fa {
-    margin-left: 20px;
+    margin-left: 18px;
     color: #22ceb4;
     top:4px
 }
 
 header .submenu #menu-ene-navbar-collapse {
     border-top: 1px solid #ccc;
-    padding:14px 40px
+    padding:14px 30px
 }
 
 header .submenu > ul > li, header .submenu > ul > div > li {
@@ -4892,7 +4896,7 @@ header .submenu #menu-ene-navbar-collapse li a {
 }
 
 header .submenu #menu-ene-navbar-collapse .fa {
-    margin-right: 10px;
+    margin-right: 5px;
     color:#333
 }
 
@@ -4924,7 +4928,7 @@ header .submenu ul li {
 
 @media (min-width: 768px) {
     body {
-        margin-top:180px
+        margin-top:145px
     }
 
     header #obere-nav {
@@ -5069,7 +5073,7 @@ header .submenu ul li {
     }
 
     header nav .submenu #menu-ene-navbar-collapse > li {
-        width:25%
+        width:23%
     }
 
     header .navbar-default .navbar-nav.nav-standort > li > a {
@@ -5092,7 +5096,6 @@ header .submenu ul li {
         position: absolute;
         list-style: none;
         width: 100%;
-        top: 60px;
         display: none;
         padding-left: 0;
         padding-top:0
@@ -8098,3 +8101,30 @@ input::-ms-input-placeholder, textarea::-ms-input-placeholder {
     }
 }
 
+#breadcrumbs {
+	padding: 10px;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+ul#menu-footer-menu{
+    padding: 0;
+    list-style: none; /*remove bullets*/
+}
+
+ul#menu-footer-menu li{    
+    float: left;
+    width: 25%; /*or whatever unit*/
+    list-style: none; /*remove bullets*/
+
+}
+
+
+ul#menu-footer-menu li ul li{    
+    float: left;
+    list-style: none; /*remove bullets*/
+    width: 25%;
+
+}

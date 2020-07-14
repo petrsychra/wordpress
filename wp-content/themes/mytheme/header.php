@@ -49,7 +49,7 @@
             </div>
 			<nav class="container">
 		        <div class="navbar-header row">
-                    <a class="header-brand" title="Zur Startseite" href="/">
+                    <a class="header-brand" title="Zur Startseite" href="/wordpress">
                         <img class="einsnulleins-logo" height="60px" alt="einsnulleins Logo" height="60px" src="/wordpress/wp-content/uploads/2020/07/einsnulleins.png"/>
                     </a>
                 </div>
@@ -95,7 +95,7 @@
                     </ul>
                 </div>
                 <hr class="row"/>
-                <nav class="submenu row">
+                <!--<nav class="submenu row">
                     <ul id="nav-alle-dienst">
                         <li>
                             <span id="collapse-alle-dienstleistungen" title="Alle Dienstleistungen ansehen">
@@ -106,85 +106,75 @@
                     </ul>
                     <ul class="col-sm-12 collapse" id="ene-navbar-collapse">
                         <li>
-                            <a href="/it-service.html">
+                            <a href="/wordpress/it-service">
                                 <em class="fa fa-cogs">&nbsp;</em>
                                 IT-Service
                             </a>
                             <ul>
                                 <li>
-                                    <a href="/desktop-management.html">Desktop Management</a>
+                                    <a href="/wordpress/it-service/desktop-management">Desktop Management</a>
                                 </li>
                                 <li>
-                                    <a href="/server-management.html">Server Management</a>
+                                    <a href="/wordpress/it-service/server-management">Server Management</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="/it-sicherheit.html">
+                            <a href="/wordpress/it-sicherheit">
                                 <em class="fa fa-shield">&nbsp;</em>
                                 IT-Sicherheit
                             </a>
                             <ul>
                                 <li>
-                                    <a href="/anti-virus-management.html">Anti-Virus Management</a>
+                                    <a href="/wordpress/it-sicherheit/anti-virus-management">Anti-Virus Management</a>
                                 </li>
                                 <li>
-                                    <a href="/backup-management.html">Backup Management</a>
+                                    <a href="/wordpress/it-sicherheit/backup-management">Backup Management</a>
                                 </li>
                                 <li>
-                                    <a href="/firewall-management.html">Firewall Management</a>
-                                </li>
-                                <li>
-                                    <a href="/patch-management.html">Patch Management</a>
+                                    <a href="/wordpress/it-sicherheit/firewall-management">Firewall Management</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="/it-infrastruktur.html">
+                            <a href="/wordpress/it-infrastruktur">
                                 <em class="fa fa-code-fork">&nbsp;</em>
                                 IT-Infrastruktur
                             </a>
                             <ul>
                                 <li>
-                                    <a href="/it-infrastrukturanalyse.html">IT-Infrastrukturanalyse</a>
+                                    <a href="/wordpress/it-infrastruktur/it-infrastrukturanalyse">IT-Infrastrukturanalyse</a>
                                 </li>
                                 <li>
-                                    <a href="/vermietung-von-arbeitsplaetzen.html">Vermietung von Arbeitspl&auml;tzen</a>
-                                </li>
-                                <li>
-                                    <a href="/virtualisierung.html">Virtualisierung</a>
-                                </li>
-                                <li>
-                                    <a href="/hardware-software-beschaffung.html">Hardware-/Software-Beschaffung</a>
+                                    <a href="/wordpress/it-infrastruktur/vermietung-von-arbeitsplaetzen">Vermietung von Arbeitspl&auml;tzen</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="/cloud-loesungen.html">
+                            <a href="/wordpress/cloud-losungen">
                                 <em class="fa fa-cloud">&nbsp;</em>
                                 Cloud-L&ouml;sungen
                             </a>
                             <ul>
                                 <li>
-                                    <a href="/email-archivierung.html">E-Mail-Archivierung</a>
+                                    <a href="/wordpress/cloud-losungen/email-archivierung">E-Mail-Archivierung</a>
                                 </li>
                                 <li>
-                                    <a href="/server-in-der-cloud.html">Server in der Cloud</a>
-                                </li>
-                                <li>
-                                    <a href="/arbeitsplaetze-in-der-cloud.html">Arbeitspl&auml;tze in der Cloud</a>
-                                </li>
-                                <li>
-                                    <a href="/datensicherung-in-der-cloud.html">Datensicherung in der Cloud</a>
-                                </li>
-                                <li>
-                                    <a href="/firewall-in-der-cloud.html">Firewall in der Cloud</a>
+                                    <a href="/wordpress/cloud-losungen/server-in-der-cloud">Server in der Cloud</a>
                                 </li>
                             </ul>
                         </li>
                     </ul>
-                </nav>                
-			<!--<nav class="submenu row">
+                </nav>-->              
+			<nav class="submenu row">
+                    <ul id="nav-alle-dienst">
+                        <li>
+                            <span id="collapse-alle-dienstleistungen" title="Alle Dienstleistungen ansehen">
+                                Alle Dienstleistungen
+                                <em class="fa fa-chevron-down">&nbsp;</em>
+                            </span>
+                        </li>
+                    </ul>
 				<?php
 				#wp_nav_menu(
 				#	array(
@@ -194,10 +184,10 @@
 				#);
 				?>
 				<?php
-				#wp_nav_menu( array( 
-				#    'theme_location' => 'my-custom-menu') ); 
+				wp_nav_menu( array( 
+				    'theme_location' => 'my-custom-menu') ); 
 				?>
 
-			</nav>--><!-- #site-navigation -->
+			</nav><!-- #site-navigation -->
 		</nav>
 	</header><!-- #masthead -->

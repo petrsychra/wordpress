@@ -136,6 +136,18 @@ function mytheme_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer', 'mytheme' ),
+			'id'            => 'footer-1',
+			'description'   => esc_html__( 'Add something to footer', 'mytheme' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);	
 }
 add_action( 'widgets_init', 'mytheme_widgets_init' );
 
@@ -145,7 +157,7 @@ add_action( 'widgets_init', 'mytheme_widgets_init' );
 function mytheme_scripts() {
 	wp_enqueue_style( 'mytheme-style', get_stylesheet_uri(), array(), _S_VERSION );
 
-	wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/css/custom.css', array(), true );
+	#wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/css/custom.css', array(), true );
 
 	wp_style_add_data( 'mytheme-style', 'rtl', 'replace' );
 
