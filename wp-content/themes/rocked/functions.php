@@ -156,6 +156,7 @@ if ( function_exists('siteorigin_panels_activate') ) {
 function rocked_scripts() {
 
 	wp_enqueue_style( 'rocked-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/css/custom.css', array(), true );
 
 	if ( get_theme_mod('body_font_name') !='' ) {
 	    wp_enqueue_style( 'rocked-body-fonts', '//fonts.googleapis.com/css?family=' . esc_attr(get_theme_mod('body_font_name')) ); 
@@ -184,6 +185,8 @@ function rocked_scripts() {
 	wp_enqueue_script( 'rocked-scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'),'', true );
 
 	wp_enqueue_script( 'rocked-main', get_template_directory_uri() . '/js/main.min.js', array('jquery'),'', true );
+
+
 
 }
 add_action( 'wp_enqueue_scripts', 'rocked_scripts' );

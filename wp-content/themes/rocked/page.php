@@ -17,6 +17,8 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
+				<?php echo get_post_meta($post->ID, 'header', true); ?>
+
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 				<?php
